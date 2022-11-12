@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta chartset = "utf_8">
+		<Title>Red social</Title>
+		<h1>Creación de usuario</h1>
+	</head>
+	<body>
+		<div class="login">
+			<h2>Ingreso de datos</h2>
+			<form action="/crear_usuario" method="post">
+			<h4>Nombre de usuario: </h4>
+			<input type="text" name="Nombre" placeholder="Nombre de usuario: " required="required">
+			<br><h4>Contraseña: </h4>
+			<input type="text" name="Contrasena" placeholder="Contraseña: " required="required">
+			<br><br><button type="submit" class="btn">Crear usuario</button>
+			</form>
+		</div>
+		
+		{% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    {% block body %}{% endblock %}
+
+	</body>
+</html>
