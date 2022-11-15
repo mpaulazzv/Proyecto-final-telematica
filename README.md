@@ -33,7 +33,8 @@ En caso de no tener ninguna, ejecutar los siguientes comandos en su terminal:
 3. Digitar en el buscador de su navegador: "localhost:80", que lo dirigirá a la url principal de la red social
 4. Para crear un usuario dirigirse a localhost/crear_usuario
 5. Ingresar un nombre de usuario y una contraseña
-6. Para acceder a su página de usuario debe dirigirse a localhost/login para iniciar sesión
-7. Ingresar los datos que utilizó al crear el usuario y será redirigido automáticamente a su paǵina de usuario (que es un contenedor) con su respectivo puerto, en caso de que parezca que no carga la página, simplemente refrésquela
-8. Para verificar los contenedores que están corriendo en su máquina, ejecutar: "docker ps"
+6. Ejecutar "cat base_datos.csv" para validar que se haya escrito correctamente la base de datos y verificar el puerto que le corresponde
+7. Para acceder a su página de usuario debe dirigirse a localhost/login para iniciar sesión
+8. Ingresar los datos que utilizó al crear el usuario y será redirigido automáticamente a su paǵina de usuario (que es un contenedor) con su respectivo puerto, en caso de que parezca que no carga la página, simplemente refrésquela
+9. Para verificar los contenedores que están corriendo en su máquina, ejecutar: "docker ps"
 
