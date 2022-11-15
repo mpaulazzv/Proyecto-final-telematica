@@ -9,11 +9,13 @@ Simula la creación y el inicio de sesión de los usuarios de una red social. Cu
 
 Para correr el contenedor creado, debe iniciar sesión ingresando las credenciales con las que creó el usuario. En caso tal de que el usuario esté registrado, entonces se pondrá a correr una imagen con su nombre que toma como base el contenedor construido previamente y será redirigido automáticamente a su página personal.
 
+
 **Requisitos:**
 
 - Tener docker
 - Tener python3.10
 - Tener las librerías FLask y Pandas de Python instaladas
+- Tener los puertos 80 y del 8000 en adelante desocupados
 
 En caso de no tener ninguna, ejecutar los siguientes comandos en su terminal:
 
@@ -26,11 +28,12 @@ En caso de no tener ninguna, ejecutar los siguientes comandos en su terminal:
 
 **Instrucciones:**
 
-1. Ubicarse en la carpeta raíz del proyecto y ejecutar: sudo python3.10 app1.py
-2. Digitar en el buscador de su navegador: localhost, que lo dirigirá a la url principal de la red social
-3. Para crear un usuario dirigirse a localhost/crear_usuario
-4. Ingresar un nombre de usuario y una contraseña
-5. Para acceder a su página de usuario debe dirigirse a localhost/login
-6. Ingresar los datos que utilizó al crear el usuario y será redirigido automáticamente a su paǵina de usuario (que es un contenedor) con su respectivo puerto, en caso de que parezca que no carga la página, simplemente refrésquela
-
+1. Descargar el .Zip o ejecutar en su terminal: git clone https://github.com/mpaulazzv/Proyecto-final-telematica
+2. Ubicarse en la carpeta raíz del proyecto y ejecutar: sudo python3.10 app1.py
+3. Digitar en el buscador de su navegador: "localhost:80", que lo dirigirá a la url principal de la red social
+4. Para crear un usuario dirigirse a localhost/crear_usuario
+5. Ingresar un nombre de usuario y una contraseña
+6. Para acceder a su página de usuario debe dirigirse a localhost/login para iniciar sesión
+7. Ingresar los datos que utilizó al crear el usuario y será redirigido automáticamente a su paǵina de usuario (que es un contenedor) con su respectivo puerto, en caso de que parezca que no carga la página, simplemente refrésquela
+8. Para verificar los contenedores que están corriendo en su máquina, ejecutar: "docker ps"
 
