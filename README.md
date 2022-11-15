@@ -1,4 +1,7 @@
 # Proyecto-final-telematica
+**Estudiante:**
+María Paula Flórez Varags
+
 Repositorio que contiene el proyecto final de telemática. Consiste en la estructura de una red social basada en contenedores.
 
 **Descripción:**
