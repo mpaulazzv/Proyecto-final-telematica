@@ -23,8 +23,8 @@ En caso de no tener ninguna, ejecutar los siguientes comandos en su terminal:
 - sudo apt install docker-compose
 - sudo apt install python3.10 -y
 - sudo apt install python3-pip -y
-- sudo apt pip3.10 install flask
-- sudo apt pip3.10 install Pandas
+- sudo pip3.10 install flask
+- sudo pip3.10 install Pandas
 
 **Instrucciones:**
 
