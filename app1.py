@@ -40,7 +40,7 @@ def crear_usuario():
 
             a=puerto + len(base_datos)
             base_datos_w.write(nombre+";"+password+";"+str(a)+"\n")
-            os.system('docker build Contenedor_app2 -t '+nombre.lower())
+            os.system('docker build . -t '+nombre.lower())
             flash('Usuario creado correctamente')
                  
         
