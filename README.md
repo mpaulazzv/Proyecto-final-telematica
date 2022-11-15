@@ -16,6 +16,7 @@ Para correr el contenedor creado, debe iniciar sesión ingresando las credencial
 **Requisitos:**
 
 - Tener docker
+- Tener a docker como usuario sudoer 
 - Tener python3.10
 - Tener las librerías FLask y Pandas de Python instaladas
 - Tener los puertos 80 y del 8000 en adelante desocupados
@@ -28,6 +29,10 @@ En caso de no tener ninguna, ejecutar los siguientes comandos en su terminal:
 - sudo apt install python3-pip -y
 - sudo pip3.10 install flask
 - sudo pip3.10 install Pandas
+
+Para poner a docker como usuario sudoer, ejecutar el siguiente comando y luego reiniciar su máquina:
+
+sudo usermod -aG docker $USER
 
 **Instrucciones:**
 
