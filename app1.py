@@ -42,8 +42,7 @@ def crear_usuario():
             base_datos_w.write(nombre+";"+password+";"+str(a)+"\n")
             os.system('docker build Contenedor_app2 -t '+nombre.lower())
             flash('Usuario creado correctamente')
-            
-            
+                 
         
         base_datos_w.close()
 
@@ -59,20 +58,20 @@ def iniciar_sesion():
         password = str(request.form['Contrasena'])
         existe = False
         base_datos = pd.read_csv('base_datos.csv')
-        puerto = 8000
+        
 
         for i in range (len(base_datos.index)):
             if nombre == base_datos.iloc[i, 0].split(';')[0] and password == base_datos.iloc[i, 0].split(';')[1]:
                 existe = True
+                puerto = base_datos.iloc[i, 0].split(';')[2]
                 flash('Ha ingresado correctamente, será redirigido a su página')
                 break
 
         if existe == False:
             flash('Credenciales de inicio de sesión incorrectas')
         else:
-            a = puerto + len(base_datos)
-            os.system('docker run -d -p '+str()+':80 '+nombre.lower())
-            return redirect('http://localhost:'+str(a))
+            os.system('docker run -d -p '+str(puerto)+':80 '+nombre.lower())
+            return redirect('http://localhost:'+str(puerto))
 
     return render_template('login.html')
 
